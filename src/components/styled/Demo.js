@@ -10,6 +10,7 @@ const Styled = styled.div`
     text-align: center;
     color: #33f96f;
     font-weight: 500;
+    font-style: italic;
     margin: 50px auto 15px;
     font-size: 40px;
     @media (min-width: 768px) {
@@ -21,7 +22,6 @@ const Styled = styled.div`
   }
   .ghp__title span {
     color: #ddd;
-    font-weight: normal;
   }
   .ghp__description {
     color: #ddd;

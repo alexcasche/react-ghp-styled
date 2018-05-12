@@ -1,19 +1,19 @@
-React Gh-Pages
+react-styled-ghp
 ===============
 
 Styled gh-pages component for React designed to showcase your repos.
 
-[![NPM](https://img.shields.io/npm/v/react-ghp-styled.svg)](https://www.npmjs.com/package/react-ghp-styled) 
+[![NPM](https://img.shields.io/npm/v/react-styled-ghp.svg)](https://www.npmjs.com/package/react-styled-ghp) 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-circle)](https://github.com/prettier/prettier)
-[![Travis](https://img.shields.io/travis/alexcasche/react-ghp-styled.svg)](https://img.shields.io/travis/alexcasche/react-ghp-styled)
+[![Travis](https://img.shields.io/travis/alexcasche/react-styled-ghp.svg)](https://img.shields.io/travis/alexcasche/react-styled-ghp)
 
 
 Install
 ---------------
 
 ```bash
-npm install --save react-ghp-styled
-yarn add react-ghp-styled
+npm install --save react-styled-ghp
+yarn add react-styled-ghp
 ```
 
 Usage
@@ -25,7 +25,7 @@ Usage
 
 ```jsx
 import React, { Component } from 'react'
-import { Layout } from 'react-ghp-styled'
+import { Layout } from 'react-styled-ghp'
 
 class Example extends Component {
   render () {
@@ -56,7 +56,7 @@ Features
 
 Examples
 ---------------
-- Demo - https://alexcasche.github.io/react-ghp-styled/
+- Demo - https://alexcasche.github.io/react-styled-ghp/
 - Sandbox - https://codesandbox.io/s/jlzno327x9
 
 
@@ -97,7 +97,7 @@ Follow these steps to setup a local development environment.  Use yarn or npm - 
 1. Clone the repo from Github
 
 ```bash
-git clone https://github.com/alexcasche/react-ghp-styled
+git clone https://github.com/alexcasche/react-styled-ghp
 ```
 
 2. Setup project & start rollup watch

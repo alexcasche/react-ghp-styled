@@ -22,7 +22,7 @@ export default {
       format: 'es'
     }
   ],
-  external: [ 'styled-components', 
+  external: [
               'marked', 
               'react-highlight',
               '@fortawesome'

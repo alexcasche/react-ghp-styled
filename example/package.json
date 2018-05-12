@@ -1,6 +1,6 @@
 {
-  "name": "react-ghp-styled-example",
-  "homepage": "https://alexcasche.github.io/react-ghp-styled",
+  "name": "react-styled-ghp-example",
+  "homepage": "https://alexcasche.github.io/react-styled-ghp",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -11,7 +11,7 @@
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.1",
-    "react-ghp-styled": "link:.."
+    "react-styled-ghp": "link:.."
   },
   "scripts": {
     "start": "react-scripts start",
