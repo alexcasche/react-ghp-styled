@@ -1,44 +1,47 @@
-React Sidebar
+React Gh-Pages
 ===============
 
-Styled off-canvas sidebar component for React with a variety of CSS transitions.
+Styled gh-pages component for React designed to showcase your repos.
 
-[![NPM](https://img.shields.io/npm/v/react-sidebar-styled.svg)](https://www.npmjs.com/package/react-sidebar-styled) 
+[![NPM](https://img.shields.io/npm/v/react-ghp-styled.svg)](https://www.npmjs.com/package/react-ghp-styled) 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-circle)](https://github.com/prettier/prettier)
-[![Travis](https://img.shields.io/travis/alexcasche/reactrix-sidebar.svg)](https://img.shields.io/travis/alexcasche/react-sidebar-styled)
+[![Travis](https://img.shields.io/travis/alexcasche/react-ghp-styled.svg)](https://img.shields.io/travis/alexcasche/react-ghp-styled)
 
 
 Install
 ---------------
 
 ```bash
-npm install --save react-sidebar-styled
-yarn add reactrix-sidebar-styled
+npm install --save react-ghp-styled
+yarn add react-ghp-styled
 ```
 
 Usage
 ---------------
-- Import the module along with the base styles
-- Pass desired props to component using spread operator
+- Import the layout component from package
+- Wrap the demo conent inside the layou component
+- Pass the layout component the desired props
 <br/><br/>
 
 ```jsx
 import React, { Component } from 'react'
-import ReactSidebar from 'react-sidebar-styled'
+import { Layout } from 'react-ghp-styled'
 
-class ReactSidebar extends Component {
+class Example extends Component {
   render () {
     const options = {
-      side: "left",
-      effect: "slide-out",
-      speed: 250,
-      timing: 'ease-in-out'
+      logo: './path/to/logo',
+      username: 'username',
+      github: './url/of/repo',
+      npm: './url/of/module',
+      title: 'title',
+      description: 'description',
+      readMe: './path/to/readMe'
     }
     return (
-      <Sidebar {...options}>
-        <div>Menu Goes Here</div>
-        <div>Page Goes Here</div>
-      </Sidebar>
+      <Layout {...options}>
+        <div>Demo content goes here</div>
+      </Layout>
     )
   }
 }
@@ -46,54 +49,46 @@ class ReactSidebar extends Component {
 
 Features
 ---------------
-- Only one dependency (styled-components)
-- Only two peer depencies (react/prop-types)
-- Large selection of smooth transitions
+- Simple setup
+- Clean & responsive design
+- Readme w/ syntax highlighting
 - Easy to use BEM class hooks
 
 Examples
 ---------------
-- Demo - https://alexcasche.github.io/react-sidebar-styled/
+- Demo - https://alexcasche.github.io/react-ghp-styled/
 - Sandbox - https://codesandbox.io/s/jlzno327x9
+
+
+      readMe: readMe
 
 Props
 ---------------
 
 | Prop              | Type        | Default          |   Description: Options   |
-|-------------------|-------------|------------------|-------------|
-| `side`            |  _string_   |  `left`          | Menu location: `left` `right` |
-| `effect`          |  _string_   |  `slide`         | Transition effect: `slide` `push` `fall` `reveal` `diverge` `uncover` `shrink` `grow` `press` |
-| `speed`           |  _number_   |  `500`           | Transition speed (milliseconds)  |
-| `timing`          |  _string_   |  `ease`          | Transition timing function:   |
-| `overlay`         |  _boolean_  |  `true`          | Display overlay: `true` `false` |
-| `icons`           |  _array_    |  `[ close, open ]`     | Custom icons: `[ component, component ]`|
-
-### Custom Icons  ##
-Set the icons prop equal to an array consisting of two components.
-
-```jsx
-import { OpenIcon, CloseIcon } from './CustomIcons'
-...
-  const options = {
-    icons: [ OpenIcon, CloseIcon ]
-  }
-...
-  <Sidebar {...options} />
-...
-
-```
+|-------------------|-------------|------------------|--------------------------|
+| `logo`            |  _string_   |  `null`          | Path to logo: `url`      |
+| `username`        |  _string_   |  `null`          | Github username          |
+| `github`          |  _string_   |  `null`          | Github repo: `url`       |
+| `npm`             |  _string_   |  `null`          | NPM pacakge: `url`       |
+| `title`           |  _string_   |  `null`          | Page title               |
+| `description`     |  _string_   |  `null`          | Page decription          |
+| `readme`          |  _string_   |  `null`          | Path to readme: `url`    |
 
 Classes
 ---------------
-| Class                  | Description        |
-|------------------------|--------------------|
-| `.sidebar`             |  Outer component wrapper |
-| `.sidebar__container`  |  Inner component wrapper  |
-| `.sidebar__menu`       |  Outer menu wrapper  |
-| `.sidebar__page`       |  Page content wrapper  |
-| `.sidebar__overlay`    |  Page overlay  |
-| `.sidebar__btn-open`   |  Open menu button  |
-| `.sidebar__btn-close`  |  Close menu button  |
+| Class                    | Description          |
+|--------------------------|----------------------|
+| `.ghp__layout`           |  Page wrapper        |
+| `.ghp__header`           |  Header section      |
+| `.ghp__username`         |  Header username     |
+| `.ghp__logo`             |  Header logo         |
+| `.ghp__link`             |  Header link         |
+| `.ghp__demo`             |  Demo section        |
+| `.ghp__title`            |  Demo title          |
+| `.ghp__description`      |  Demo description    |
+| `.ghp__readme`           |  Readme section      |
+| `.ghp__markdown`         |  Readme markdown     |
 
 
 Development
@@ -102,7 +97,7 @@ Follow these steps to setup a local development environment.  Use yarn or npm - 
 1. Clone the repo from Github
 
 ```bash
-git clone https://github.com/alexcasche/react-sidebar-styled
+git clone https://github.com/alexcasche/react-ghp-styled
 ```
 
 2. Setup project & start rollup watch
@@ -122,7 +117,6 @@ yarn install && yarn start
 
 Shoutouts
 ---------------
-- Inspiration: [react-burger-menu](https://github.com/negomi/react-burger-menu) 😍
 - Setup: [ create-react-library ](https://github.com/transitive-bullshit/create-react-library) 🙌
 
 

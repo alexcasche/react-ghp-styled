@@ -22,7 +22,11 @@ export default {
       format: 'es'
     }
   ],
-  external: [ 'styled-components' ] ,
+  external: [ 'styled-components', 
+              'marked', 
+              'react-highlight',
+              '@fortawesome'
+            ] ,
   plugins: [
     external(),
     postcss({

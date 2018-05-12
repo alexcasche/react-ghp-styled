@@ -1,24 +1,30 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
-const Styled = styled.div `
+const Styled = styled.div`
   position: relative;
   padding: 20px 20px 80px;
-  background-color: #282C34;
+  background-color: #282c34;
   text-align: center;
-  h1 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  .ghp__title {
     text-align: center;
-    color: #33F96F;
+    color: #33f96f;
     font-weight: 500;
     margin: 50px auto 15px;
     font-size: 40px;
-    @media (min-width: 768px) { font-size: 50px; }
-    @media (min-width: 900px) { font-size: 60px; }
+    @media (min-width: 768px) {
+      font-size: 50px;
+    }
+    @media (min-width: 900px) {
+      font-size: 60px;
+    }
   }
-  h1 span {
-    color: #DDD;
+  .ghp__title span {
+    color: #ddd;
     font-weight: normal;
   }
-  p {
+  .ghp__description {
+    color: #ddd;
     max-width: 750px;
     margin: 10px auto 40px;
     font-size: 20px;
@@ -26,8 +32,8 @@ const Styled = styled.div `
     line-height: 1.75;
   }
   button {
-    background-color: #DDD;
-    color: #21242B;
+    background-color: #ddd;
+    color: #21242b;
     border: none;
     font-weight: 500;
     font-size: 1em;
@@ -38,8 +44,9 @@ const Styled = styled.div `
       cursor: pointer;
       background-color: white;
     }
-    &.active, &.active:hover {
-      background-color: #16D04A;
+    &.active,
+    &.active:hover {
+      background-color: #16d04a;
       color: white;
       pointer-events: none;
     }
@@ -52,10 +59,10 @@ const Styled = styled.div `
   }
   .dropdown {
     .dropdown__option:hover {
-      background-color: #16D04A;
+      background-color: #16d04a;
       color: white;
     }
   }
-`;
+`
 
-export default Styled;
+export default Styled

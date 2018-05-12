@@ -1,19 +1,18 @@
 {
-  "name": "react-sidebar-styled",
+  "name": "react-ghp-styled",
   "version": "0.0.1",
-  "description": "Off-Canvas Sidebar Component For React",
+  "description": "Styled github pages component for React designed to showcase your repos.",
   "author": "alexcasche",
   "license": "MIT",
-  "repository": "alexcasche/react-sidebar-styled",
-  "homepage": "https://github.com/alexcasche/reactrix-sidebar-styled#readme",
+  "repository": "alexcasche/react-ghp-styled",
+  "homepage": "https://github.com/alexcasche/reactrix-ghp-styledreadme",
   "keywords": [
     "react",
     "component",
-    "flex",
-    "grid",
-    "responsive",
-    "flexible",
-    "lightweight"
+    "github",
+    "pages",
+    "layout",
+    "flexible"
   ],
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -48,7 +47,6 @@
     "eslint-plugin-react": "^7.7.0",
     "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.1.0",
-    "nodemon": "^1.17.4",
     "postcss-cssnext": "^3.1.0",
     "postcss-nested": "^3.0.0",
     "prettier": "^1.12.1",
@@ -68,6 +66,12 @@
     "dist"
   ],
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-brands": "^5.0.13",
+    "@fortawesome/react-fontawesome": "^0.0.19",
+    "marked": "^0.3.19",
+    "react-highlight": "^0.12.0",
+    "react-highlight-js": "^0.15.0",
     "styled-components": "^3.2.6"
   }
 }
