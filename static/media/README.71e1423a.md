@@ -26,6 +26,7 @@ Usage
 ```jsx
 import React, { Component } from 'react';
 import { Layout } from 'react-styled-ghp';
+import { ThemeProvider } from 'styled-components';
 import theme from './theme';
 
 class Example extends Component {
@@ -41,9 +42,11 @@ class Example extends Component {
       theme: theme,
     }
     return (
-      <Layout {...options}>
-        <div>Demo content goes here</div>
-      </Layout>
+      <ThemeProvider theme={theme}>
+        <Layout {...options}>
+          <div>Demo content goes here</div>
+        </Layout>
+      <ThemeProvider>
     )
   }
 }
@@ -85,9 +88,9 @@ The theme object accepts the following options.  It can be passed directly to th
 | Prop              | Type        | Default          |
 |-------------------|-------------|------------------|
 | `headerBG`        |  _string_   |  `#20232A`       |
-| `fontSans`        |  _string_   |  `inherit`       |
 | `bannerBG`        |  _string_   |  `#292C34`       |
 | `bodyBG`          |  _string_   |  `#FAFAFA`       |
+| `fontSans`        |  _string_   |  `inherit`       |
 | `lightText`       |  _string_   |  `#DDDDDD`       |
 | `darkText`        |  _string_   |  `#20232A`       |
 | `hoverText`       |  _string_   |  `#34f96E`       |
