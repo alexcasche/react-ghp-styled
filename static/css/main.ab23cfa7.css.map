@@ -1,1 +1,0 @@
-{"version":3,"sources":["style.css"],"names":[],"mappings":"AAAA,KACE,QAAU,CAGZ,EACE,8BACQ,qBAAuB","file":"static/css/main.ab23cfa7.css","sourcesContent":["body {\n  margin: 0;\n}\n\n* {\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n\n\n// WEBPACK FOOTER //\n// ./src/style.css"],"sourceRoot":""}
