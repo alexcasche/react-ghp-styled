@@ -14,7 +14,7 @@ class Example extends Component {
       username: 'alexasche',
       github: 'https://github.com/alexcasche/react-styled-ghp',
       npm: 'https://npmjs.org/react-styled-ghp',
-      title: 'react~-styled-ghp~',
+      title: '[react]-styled-ghp',
       description: 'Styled gh-pages component for React designed to showcase your repos.',
       readMe: readMe
     }

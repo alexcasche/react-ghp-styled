@@ -3,8 +3,9 @@ import Styled from './styled/Demo';
 
 export default class Demo extends Component {
   renderHeadline = () => {
-    const arr = this.props.title.split('~');
-    return <h1 className="ghp__title">{arr[0]}<span>{arr[1]}</span></h1>
+    const title = this.props.title.substr(1);
+    const arr = title.split(']');
+    return <h1 className="ghp__title"><span>{arr[0]}</span>{arr[1]}</h1>
   }
   render() {
     return (
