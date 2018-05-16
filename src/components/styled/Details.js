@@ -2,11 +2,22 @@ import styled from 'styled-components'
 
 const Styled = styled.div`
   position: relative;
-  color: ${props => props.theme.darkText};
-  background-color: ${props => props.theme.bodyBG};
+  color: ${props => 
+    props.theme.darkText
+      ? props.theme.darkText
+      : '#20232A'
+  };
+  background-color: ${props => 
+    props.theme.bodyBG
+      ? props.theme.bodyBG
+      : '#FAFAFA'
+  };
   padding: 50px 20px 80px;
-  font-family: ${props => props.theme.fontSans};
-  }
+  font-family: ${props => 
+    props.theme.fontSans
+      ? props.theme.fontSans
+      : 'inherit'
+  };
   section {
     position: relative;
     width: 100%;

@@ -1,7 +1,7 @@
 {
   "name": "react-styled-ghp",
-  "version": "0.0.1",
-  "description": "Styled github pages component for React designed to showcase your repos.",
+  "version": "0.0.3",
+  "description": "Styled gh-pages component for React designed to showcase your repos.",
   "author": "alexcasche",
   "license": "MIT",
   "repository": "alexcasche/react-styled-ghp",
