@@ -91,9 +91,10 @@ The theme object accepts the following options.  It can be passed directly to th
 | `bannerBG`        |  _string_   |  `#292C34`       |
 | `bodyBG`          |  _string_   |  `#FAFAFA`       |
 | `fontSans`        |  _string_   |  `inherit`       |
-| `lightText`       |  _string_   |  `#DDDDDD`       |
-| `darkText`        |  _string_   |  `#20232A`       |
-| `hoverText`       |  _string_   |  `#34f96E`       |
+| `headerColor`     |  _string_   |  `#DDDDDD`       |
+| `bannerColor`     |  _string_   |  `#DDDDDD`       |
+| `bodyColor`       |  _string_   |  `#20232A`       |
+| `hoverColor`      |  _string_   |  `#34f96E`       |
 
 
 Classes
