@@ -25,19 +25,19 @@ const Styled = styled.header`
     line-height: 50px;
     font-size: 17px;
     color: ${props =>
-      props.theme.lightText ? props.theme.lightText : '#DDDDDD'};
+      props.theme.headerColor ? props.theme.headerColor : '#DDDDDD'};
     font-weight: 600;
   }
   .gh__link {
     margin-left: 20px;
     color: ${props =>
-      props.theme.lightText ? props.theme.lightText : '#DDDDDD'};
+      props.theme.headerColor ? props.theme.headerColor : '#DDDDDD'};
     font-size: 26px;
     line-height: 50px;
   }
   .gh__link:hover {
     color: ${props =>
-      props.theme.hoverText ? props.theme.hoverText : '#34f96E'};
+      props.theme.hoverColor ? props.theme.hoverColor : '#34f96E'};
   }
 `
 

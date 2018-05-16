@@ -13,9 +13,10 @@ const propTypes = {
     bannerBG: t.string,
     bodyBG: t.string,
     fontSans: t.string,
-    lightText: t.string,
-    darkText: t.string,
-    hoverText: t.string
+    headerColor: t.string,
+    bannerColor: t.string,
+    bodyColor: t.string,
+    hoverColor: t.string
   })
 }
 const defaultProps = {
@@ -27,9 +28,10 @@ const defaultProps = {
     bannerBG: '#292C34',
     bodyBG: '#FAFAFA',
     fontSans: 'inherit',
-    lightText: '#DDDDDD',
-    darkText: '#20232A',
-    hoverText: '#34f96E'
+    headerColor: '#DDDDDD',
+    bannerColor: '#DDDDDD',
+    bodyColor: '#20232A',
+    hoverColor: '#34f96E'
   }
 }
 

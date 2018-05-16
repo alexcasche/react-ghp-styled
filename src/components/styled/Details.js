@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Styled = styled.div`
   position: relative;
-  color: ${props => (props.theme.darkText ? props.theme.darkText : '#20232A')};
+  color: ${props => (props.theme.bodyColor ? props.theme.bodyColor : '#20232A')};
   background-color: ${props =>
     props.theme.bodyBG ? props.theme.bodyBG : '#FAFAFA'};
   padding: 50px 20px 80px;

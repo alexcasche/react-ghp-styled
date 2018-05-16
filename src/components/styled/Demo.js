@@ -14,7 +14,7 @@ const Styled = styled.div`
   .ghp__title {
     text-align: center;
     color: ${props =>
-      props.theme.lightText ? props.theme.lightText : '#DDDDDD'};
+      props.theme.bannerColor ? props.theme.bannerColor : '#DDDDDD'};
     font-weight: 500;
     font-style: italic;
     margin: 50px auto 15px;
@@ -28,11 +28,11 @@ const Styled = styled.div`
   }
   .ghp__title span {
     color: ${props =>
-      props.theme.hoverText ? props.theme.hoverText : '#34f96E'};
+      props.theme.hoverColor ? props.theme.hoverColor : '#34f96E'};
   }
   .ghp__description {
     color: ${props =>
-      props.theme.lightText ? props.theme.lightText : '#DDDDDD'};
+      props.theme.bannerColor ? props.theme.bannerColor : '#DDDDDD'};
     max-width: 750px;
     margin: 10px auto 40px;
     font-size: 20px;
