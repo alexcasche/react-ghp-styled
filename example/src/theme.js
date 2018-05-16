@@ -1,9 +1,10 @@
 export default {
   headerBG: '#20232A',
   bannerBG: '#292C34',
-  bodyBG: '#FAFAFA',
+  pageBG: '#484C59',
   fontSans: 'inherit',
-  lightText: '#DDDDDD',
-  darkText: '#20232A',
-  hoverText: '#34f96E'
+  headerColor: '#DDDDDD',
+  bannerColor: '#DDDDDD',
+  pageColor: '#20232A',
+  hoverColor: '#34f96E'
 }

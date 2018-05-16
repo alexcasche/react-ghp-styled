@@ -11,7 +11,7 @@ const propTypes = {
   theme: t.shape({
     headerBG: t.string,
     bannerBG: t.string,
-    bodyBG: t.string,
+    pageBG: t.string,
     fontSans: t.string,
     headerColor: t.string,
     bannerColor: t.string,
@@ -26,11 +26,11 @@ const defaultProps = {
   theme: {
     headerBG: '#20232A',
     bannerBG: '#292C34',
-    bodyBG: '#FAFAFA',
+    pageBG: '#484C59',
     fontSans: 'inherit',
     headerColor: '#DDDDDD',
     bannerColor: '#DDDDDD',
-    bodyColor: '#20232A',
+    pageColor: '#20232A',
     hoverColor: '#34f96E'
   }
 }

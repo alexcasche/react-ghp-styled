@@ -5,7 +5,7 @@ Styled gh-pages component for React designed to showcase your repos.
 
 [![NPM](https://img.shields.io/npm/v/react-styled-ghp.svg)](https://www.npmjs.com/package/react-styled-ghp) 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-circle)](https://github.com/prettier/prettier)
-[![Travis](https://img.shields.io/travis/alexcasche/react-styled-ghp.svg)](https://img.shields.io/travis/alexcasche/react-styled-ghp)
+<!-- [![Travis](https://img.shields.io/travis/alexcasche/react-styled-ghp.svg)](https://img.shields.io/travis/alexcasche/react-styled-ghp) -->
 
 
 Install
@@ -89,11 +89,11 @@ The theme object accepts the following options.  It can be passed directly to th
 |-------------------|-------------|------------------|
 | `headerBG`        |  _string_   |  `#20232A`       |
 | `bannerBG`        |  _string_   |  `#292C34`       |
-| `bodyBG`          |  _string_   |  `#FAFAFA`       |
+| `pageBG`          |  _string_   |  `#484C59`       |
 | `fontSans`        |  _string_   |  `inherit`       |
 | `headerColor`     |  _string_   |  `#DDDDDD`       |
 | `bannerColor`     |  _string_   |  `#DDDDDD`       |
-| `bodyColor`       |  _string_   |  `#20232A`       |
+| `pageColor`       |  _string_   |  `#20232A`       |
 | `hoverColor`      |  _string_   |  `#34f96E`       |
 
 

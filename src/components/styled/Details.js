@@ -2,9 +2,10 @@ import styled from 'styled-components'
 
 const Styled = styled.div`
   position: relative;
-  color: ${props => (props.theme.bodyColor ? props.theme.bodyColor : '#20232A')};
+  color: ${props =>
+    props.theme.pageColor ? props.theme.pageColor : '#20232A'};
   background-color: ${props =>
-    props.theme.bodyBG ? props.theme.bodyBG : '#FAFAFA'};
+    props.theme.pageBG ? props.theme.pageBG : '#484C59'};
   padding: 50px 20px 80px;
   font-family: ${props =>
     props.theme.fontSans ? props.theme.fontSans : 'inherit'};
