@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Layout from 'react-styled-ghp';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
 import readMe from 'react-styled-ghp/README.md';
 import logo from './logo.svg';
 import './style.css';
@@ -17,12 +19,14 @@ class Example extends Component {
       readMe: readMe
     }
     return (
-      <Layout light {...options}>
-        <input placeholder='username' />
-        <input placeholder='title' />
-        <input placeholder='description' />
-        <button>Click Me</button>
-      </Layout>
+      <ThemeProvider theme={theme}>
+        <Layout {...options}>
+          <input placeholder='username' />
+          <input placeholder='title' />
+          <input placeholder='description' />
+          <button>Click Me</button>
+        </Layout>
+      </ThemeProvider>
     )
   }
 }
