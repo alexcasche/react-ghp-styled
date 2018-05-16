@@ -16,7 +16,7 @@ export default class Header extends Component {
   }
   render() {
     return (
-      <Styled className="gh__header">
+      <Styled className="gh__header" {...this.props.theme}>
         <img className="gh__logo" src={this.props.logo} alt="logo" />
         <p className="gh__username">{this.props.username}</p>
         {this.renderIcon('github')}

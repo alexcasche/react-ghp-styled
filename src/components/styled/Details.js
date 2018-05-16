@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 
 const Styled = styled.div`
-  color: #21242B;
-  background-color: #FAFAFA;
+  position: relative;
+  color: ${props => props.theme.darkText};
+  background-color: ${props => props.theme.bodyBG};
   padding: 50px 20px 80px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: ${props => props.theme.fontSans};
   }
   section {
     position: relative;

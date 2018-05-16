@@ -5,8 +5,8 @@ const Styled = styled.header`
   padding: 0 40px;
   display: flex;
   justify-content: space-between;
-  background-color: #20232a;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: ${props => props.theme.headerBG};
+  font-family: ${props => props.theme.fontSans};
   box-sizing: border-box;
   top: 0;
   width: 100vw;
@@ -22,17 +22,17 @@ const Styled = styled.header`
     font-size: 20px;
     line-height: 50px;
     font-size: 17px;
-    color: #ccc;
+    color: ${props => props.theme.lightText};
     font-weight: 600;
   }
   .gh__link {
     margin-left: 20px;
-    color: #ccc;
+    color: ${props => props.theme.lightText};
     font-size: 26px;
     line-height: 50px;
   }
   .gh__link:hover {
-    color: #33f96f;
+    color: ${props => props.theme.hoverText};
   }
 `
 

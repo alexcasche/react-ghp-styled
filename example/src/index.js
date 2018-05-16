@@ -17,7 +17,7 @@ class Example extends Component {
       readMe: readMe
     }
     return (
-      <Layout {...options} >
+      <Layout light {...options}>
         <input placeholder='username' />
         <input placeholder='title' />
         <input placeholder='description' />

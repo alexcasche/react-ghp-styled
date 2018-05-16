@@ -24,8 +24,9 @@ Usage
 <br/><br/>
 
 ```jsx
-import React, { Component } from 'react'
-import { Layout } from 'react-styled-ghp'
+import React, { Component } from 'react';
+import { Layout } from 'react-styled-ghp';
+import theme from './theme';
 
 class Example extends Component {
   render () {
@@ -36,7 +37,8 @@ class Example extends Component {
       npm: './url/of/module',
       title: 'title',
       description: 'description',
-      readMe: './path/to/readMe'
+      readMe: './path/to/readMe',
+      theme: theme,
     }
     return (
       <Layout {...options}>
@@ -57,26 +59,44 @@ Features
 Examples
 ---------------
 - Demo - https://alexcasche.github.io/react-styled-ghp/
-- Sandbox - https://codesandbox.io/s/jlzno327x9
-
-
-      readMe: readMe
 
 Props
 ---------------
+The component accepts the following props.
 
-| Prop              | Type        | Default          |   Description: Options   |
-|-------------------|-------------|------------------|--------------------------|
-| `logo`            |  _string_   |  `null`          | Path to logo: `url`      |
-| `username`        |  _string_   |  `null`          | Github username          |
-| `github`          |  _string_   |  `null`          | Github repo: `url`       |
-| `npm`             |  _string_   |  `null`          | NPM pacakge: `url`       |
-| `title`           |  _string_   |  `null`          | Page title               |
-| `description`     |  _string_   |  `null`          | Page decription          |
-| `readme`          |  _string_   |  `null`          | Path to readme: `url`    |
+| Prop              | Type        | Default          |   Description: Options     |
+|-------------------|-------------|------------------|----------------------------|
+| `logo`            |  _string_   |  `null`          | Path to logo: `url`        |
+| `username`        |  _string_   |  `null`          | Github username            |
+| `github`          |  _string_   |  `null`          | Github repo: `url`         |
+| `npm`             |  _string_   |  `null`          | NPM pacakge: `url`         |
+| `title`           |  _string_   |  `null`          | Page title:  `[base]-subname` |
+| `description`     |  _string_   |  `null`          | Page decription            |
+| `readme`          |  _string_   |  `null`          | Path to readme: `url`      |
+| `theme`           |  _object_   |  `see below`     | Theme object: `see below`  |
+
+**Note:**<br />
+_The page title text is colored using the format [hoverText]-lightText.  For example, the current page uses: [react]-styled-ghp_
+
+Theme
+---------------
+The theme object accepts the following options.  It can be passed directly to the component as props, or with the styled-components theme provider (recommended).
+
+| Prop              | Type        | Default          |
+|-------------------|-------------|------------------|
+| `headerBG`        |  _string_   |  `#20232A`       |
+| `fontSans`        |  _string_   |  `inherit`       |
+| `bannerBG`        |  _string_   |  `#292C34`       |
+| `bodyBG`          |  _string_   |  `#FAFAFA`       |
+| `lightText`       |  _string_   |  `#DDDDDD`       |
+| `darkText`        |  _string_   |  `#20232A`       |
+| `hoverText`       |  _string_   |  `#34f96E`       |
+
 
 Classes
 ---------------
+For more control over the styles, you can use the following BEM classes.
+
 | Class                    | Description          |
 |--------------------------|----------------------|
 | `.ghp__layout`           |  Page wrapper        |

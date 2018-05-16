@@ -30,7 +30,7 @@ export default class Details extends Component {
   }
   render() {
     return (
-      <Styled className="ghp__readme">
+      <Styled className="ghp__readme" {...this.props.theme}>
         <section> 
           <header><i className="fas fa-book" />README.md</header>
           {this.renderMarkdown(this.state.markdown)}
