@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Layout, { theme } from 'react-styled-ghp';
+import Layout from 'react-styled-ghp';
 import { ThemeProvider } from 'styled-components';
+import { RadioGroup, Radio } from 'react-styled-radio';
 import readMe from 'react-styled-ghp/README.md';
 import logo from './logo.svg';
 import './style.css';
@@ -18,12 +19,13 @@ class Example extends Component {
       readMe: readMe
     }
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={Layout.theme}>
         <Layout {...options}>
-          <input placeholder='username' />
-          <input placeholder='title' />
-          <input placeholder='description' />
-          <button>Click Me</button>
+          <RadioGroup>
+            <Radio label="base" />
+            <Radio label="light" />
+            <Radio label="dark" />
+          </RadioGroup>
         </Layout>
       </ThemeProvider>
     )

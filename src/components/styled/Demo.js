@@ -16,7 +16,7 @@ const Styled = styled.div`
     color: ${props =>
       props.theme.bannerColor ? props.theme.bannerColor : '#DFDFDF'};
     font-weight: 500;
-    margin: .5em auto .25em;
+    margin: 0.5em auto 0.25em;
     font-size: 2em;
     @media (min-width: 768px) {
       font-size: 2.75em;
@@ -33,7 +33,7 @@ const Styled = styled.div`
     color: ${props =>
       props.theme.bannerColor ? props.theme.bannerColor : '#DFDFDF'};
     max-width: 750px;
-    margin: .5em auto 1.75em;
+    margin: 0.5em auto 1.75em;
     font-weight: 400;
     line-height: 1.75;
     font-size: 1.1em;

@@ -19,7 +19,7 @@ yarn add react-styled-ghp
 Usage
 ---------------
 - Import the layout component from package
-- Wrap the demo conent inside the layou component
+- Wrap the demo conent inside the layout component
 - Pass the layout component the desired props
 <br/><br/>
 

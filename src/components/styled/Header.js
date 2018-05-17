@@ -6,8 +6,7 @@ const Styled = styled.header`
   display: flex;
   justify-content: space-between;
   background-color: ${props =>
-    props.theme.headerBG ? props.theme.headerBG : '#1054B3'
-  };
+    props.theme.headerBG ? props.theme.headerBG : '#1054B3'};
   font-family: ${props =>
     props.theme.fontSans ? props.theme.fontSans : 'inherit'};
   box-sizing: border-box;
