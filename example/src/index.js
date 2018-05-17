@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Layout from 'react-styled-ghp';
+import Layout, { theme } from 'react-styled-ghp';
 import { ThemeProvider } from 'styled-components';
-import theme from './theme';
 import readMe from 'react-styled-ghp/README.md';
 import logo from './logo.svg';
 import './style.css';
@@ -15,7 +14,7 @@ class Example extends Component {
       github: 'https://github.com/alexcasche/react-styled-ghp',
       npm: 'https://npmjs.org/react-styled-ghp',
       title: '[react]-styled-ghp',
-      description: 'Styled gh-pages component for React designed to showcase your repos.',
+      description: 'Github pages component for React built with styled-components < 💅>',
       readMe: readMe
     }
     return (

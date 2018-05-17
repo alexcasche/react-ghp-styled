@@ -5,7 +5,7 @@ const Styled = styled.div`
   color: ${props =>
     props.theme.pageColor ? props.theme.pageColor : '#20232A'};
   background-color: ${props =>
-    props.theme.pageBG ? props.theme.pageBG : '#484C59'};
+    props.theme.pageBG ? props.theme.pageBG : '#FAFAFA'};
   padding: 50px 20px 80px;
   font-family: ${props =>
     props.theme.fontSans ? props.theme.fontSans : 'inherit'};
