@@ -1,2 +1,2 @@
-import Layout from './components/Layout';
-export default Layout;
+import GhPage from './components/GhPage';
+export default GhPage;
