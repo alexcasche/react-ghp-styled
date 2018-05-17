@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Layout from 'react-styled-ghp';
-import { ThemeProvider } from 'styled-components';
+import GhPage from 'react-styled-ghp';
 import { RadioGroup, Radio } from 'react-styled-radio';
+import { ThemeProvider } from 'styled-components';
+import theme from './theme';
 import readMe from 'react-styled-ghp/README.md';
 import logo from './logo.svg';
 import './style.css';
@@ -19,14 +20,14 @@ class Example extends Component {
       readMe: readMe
     }
     return (
-      <ThemeProvider theme={Layout.theme}>
-        <Layout {...options}>
+      <ThemeProvider theme={theme}>
+        <GhPage {...options}>
           <RadioGroup>
             <Radio label="base" />
             <Radio label="light" />
             <Radio label="dark" />
           </RadioGroup>
-        </Layout>
+        </GhPage>
       </ThemeProvider>
     )
   }

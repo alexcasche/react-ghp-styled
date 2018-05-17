@@ -4,7 +4,6 @@ import Demo from './Demo';
 import Details from './Details';
 import marked from 'marked';
 import { propTypes, defaultProps } from '../props';
-import theme from '../theme';
 
 export default class Layout extends Component {
   static propTypes = propTypes;
@@ -30,5 +29,3 @@ export default class Layout extends Component {
     );
   }
 }
-
-Layout.theme = theme;
