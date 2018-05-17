@@ -19,15 +19,13 @@ yarn add react-styled-ghp
 Usage
 ---------------
 - Import the layout component from package
-- Wrap the demo conent inside the layou component
+- Wrap the demo conent inside the layout component
 - Pass the layout component the desired props
 <br/><br/>
 
 ```jsx
 import React, { Component } from 'react';
-import { Layout } from 'react-styled-ghp';
-import { ThemeProvider } from 'styled-components';
-import theme from './theme';
+import GhPage from 'react-styled-ghp';
 
 class Example extends Component {
   render () {
@@ -39,14 +37,11 @@ class Example extends Component {
       title: 'title',
       description: 'description',
       readMe: './path/to/readMe',
-      theme: theme,
     }
     return (
-      <ThemeProvider theme={theme}>
-        <Layout {...options}>
-          <div>Demo content goes here</div>
-        </Layout>
-      <ThemeProvider>
+      <GhPage {...options}>
+        <div>Demo content goes here</div>
+      </GhPage>
     )
   }
 }
@@ -65,7 +60,7 @@ Examples
 
 Props
 ---------------
-The component accepts the following props.
+The GhPage component accepts the following props.
 
 | Prop              | Type        | Default          |   Description: Options     |
 |-------------------|-------------|------------------|----------------------------|
@@ -83,7 +78,7 @@ _The page title text is colored using the format [hoverText]-lightText.  For exa
 
 Theme
 ---------------
-The theme object accepts the following options.  It can be passed directly to the component as props, or with the styled-components theme provider (recommended).
+The theme object can be used to customize the look of the component, with the following values.
 
 | Prop              | Type        | Default          |
 |-------------------|-------------|------------------|
@@ -95,6 +90,33 @@ The theme object accepts the following options.  It can be passed directly to th
 | `bannerColor`     |  _string_   |  `#DDDDDD`       |
 | `pageColor`       |  _string_   |  `#20232A`       |
 | `hoverColor`      |  _string_   |  `#34f96E`       |
+
+There are two ways to use the theme object.
+1. Pass the theme to the styled-components ThemeProvider (recommended)
+
+```jsx
+import { ThemeProvider } from 'styled-components';
+
+...
+return (
+  <ThemeProvider theme={theme}>
+    <GhPage>
+      <div>Demo content goes here</div>
+    </GhPage>
+  </ThemeProvider>
+);
+...
+```
+
+2. Pass the theme directly to the GhPage component (not recommended)
+
+```jsx
+...
+return (
+  <GhPage theme={theme} />
+);
+...
+```
 
 
 Classes
