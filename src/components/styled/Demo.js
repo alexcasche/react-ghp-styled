@@ -2,12 +2,13 @@ import styled from 'styled-components'
 
 const Styled = styled.div`
   position: relative;
-  padding: 20px 20px 80px;
+  padding: 20px;
   background-color: ${props =>
     props.theme.bannerBG ? props.theme.bannerBG : '#1666D3'};
   text-align: center;
   font-family: ${props =>
     props.theme.fontSans ? props.theme.fontSans : 'inherit'};
+  word-wrap: break-word;
   & > * {
     position: relative;
   }

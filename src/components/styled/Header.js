@@ -11,6 +11,7 @@ const Styled = styled.header`
     props.theme.fontSans ? props.theme.fontSans : 'inherit'};
   box-sizing: border-box;
   top: 0;
+  word-wrap: break-word;
   .gh__logo {
     height: 20px;
     position: relative;

@@ -2,7 +2,7 @@
   "name": "react-styled-ghp-example",
   "homepage": "https://alexcasche.github.io/react-styled-ghp",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "dependencies": {
     "classnames": "^2.2.5",

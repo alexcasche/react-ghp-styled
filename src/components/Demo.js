@@ -9,7 +9,7 @@ export default class Demo extends Component {
   }
   render() {
     return (
-      <Styled className='demo' {...this.props.theme}>
+      <Styled className='ghp__demo' {...this.props.theme}>
         {this.renderHeadline()}
         <p className="ghp__description">{this.props.description}</p>
         {this.props.children}

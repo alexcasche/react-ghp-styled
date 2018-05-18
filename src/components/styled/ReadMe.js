@@ -9,6 +9,7 @@ const Styled = styled.div`
   padding: 50px 20px 80px;
   font-family: ${props =>
     props.theme.fontSans ? props.theme.fontSans : 'inherit'};
+  word-wrap: break-word;
   section {
     position: relative;
     width: 100%;
