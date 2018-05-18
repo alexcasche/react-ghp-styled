@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './Header';
 import Demo from './Demo';
-import Details from './Details';
+import ReadMe from './ReadMe';
 import marked from 'marked';
 import { propTypes, defaultProps } from '../props';
 
@@ -10,7 +10,7 @@ export default class Layout extends Component {
   static defaultProps = defaultProps;
   render() {
     return (
-      <div className='gh__layout'>
+      <div className='gh__page'>
         <Header 
           logo={this.props.logo}
           username={this.props.username}
@@ -22,7 +22,7 @@ export default class Layout extends Component {
           description={this.props.description}
           children={this.props.children}
         />
-        <Details 
+        <ReadMe
           readMe={this.props.readMe}
         />
       </div>

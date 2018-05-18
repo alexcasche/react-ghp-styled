@@ -1,7 +1,7 @@
 react-styled-ghp
 ===============
 
-Styled gh-pages component for React designed to showcase your repos.
+GitHub Pages component for React built with styled-components < 💅>
 
 [![NPM](https://img.shields.io/npm/v/react-styled-ghp.svg)](https://www.npmjs.com/package/react-styled-ghp) 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-circle)](https://github.com/prettier/prettier)
@@ -16,11 +16,11 @@ npm install --save react-styled-ghp
 yarn add react-styled-ghp
 ```
 
-Usage
+Basic Usage
 ---------------
-- Import the layout component from package
-- Wrap the demo conent inside the layout component
-- Pass the layout component the desired props
+- Import the GhPage component from package
+- Wrap the demo conent inside GhPage
+- Pass the in the desired options
 <br/><br/>
 
 ```jsx
@@ -46,6 +46,27 @@ class Example extends Component {
   }
 }
 ```
+
+Partial Usage
+---------------
+If you only want to render parts of the GhPage, you can import the indiviual components (Header, Demo, Layout).  Make sure to pass the layout object to all of the components you wish to render.
+
+```jsx
+import { Header, Demo }  from 'react-styled-ghp';
+
+...
+return (
+  <div>
+    <Header {...options} />
+    <Demo {...options}>
+      <div>Demo content goes here</div>
+    </Demo>
+  </div>
+);
+...
+```
+
+
 
 Features
 ---------------
@@ -125,7 +146,7 @@ For more control over the styles, you can use the following BEM classes.
 
 | Class                    | Description          |
 |--------------------------|----------------------|
-| `.ghp__layout`           |  Page wrapper        |
+| `.ghp__page`             |  Page wrapper        |
 | `.ghp__header`           |  Header section      |
 | `.ghp__username`         |  Header username     |
 | `.ghp__logo`             |  Header logo         |

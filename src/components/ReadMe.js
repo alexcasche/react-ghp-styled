@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import marked from 'marked';
 import Highlight from 'react-highlight';
-import Styled from './styled/Details';
+import Styled from './styled/ReadMe';
 import 'highlight.js/styles/atom-one-light.css';
 
 export default class Details extends Component {
@@ -12,10 +12,12 @@ export default class Details extends Component {
     }
   }
   componentDidMount() {
-    fetch(this.props.readMe).then(response => {
-      return response.text() }).then(text => {
-      return this.setState({markdown: marked(text)})
-    })
+    if(this.props.readMe) {
+      fetch(this.props.readMe).then(response => {
+        return response.text() }).then(text => {
+        return this.setState({markdown: marked(text)})
+      })
+    }
   }
   renderMarkdown = (markdown) => {
     if(markdown) {
@@ -34,6 +36,7 @@ export default class Details extends Component {
         <section> 
           <header><i className="fas fa-book" />README.md</header>
           {this.renderMarkdown(this.state.markdown)}
+          {this.props.children}
         </section>
       </Styled>
     )
